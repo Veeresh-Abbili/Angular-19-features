@@ -1,0 +1,24 @@
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+<p>hydration works!</p>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>S NO</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+         @for (item of users; track $index) {
+             <tr>
+               <td>{{item.id}}</td>
+               <td>{{item.name}}</td>
+               <td>{{item.age}}</td>
+               <td>{{item.gender}}</td>
+             </tr>
+            }
+    </tbody>
+</table>
