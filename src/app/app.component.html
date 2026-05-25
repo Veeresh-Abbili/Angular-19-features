@@ -1,2 +1,72 @@
-<p>app.component works!</p>
-<app-linked-signal></app-linked-signal>
+<!-- <p>app.component works!</p> -->
+<app-resource-rx-resource/>
+<!-- <app-linked-signal></app-linked-signal> -->
+
+<!-- hydration on : interaction, hover,timer,viewport,idle and immediate -->
+
+<!-- @defer(hydrate on interaction) {
+  <app-hydration></app-hydration>
+}@placeholder {
+  <div>user data loading...</div>
+}
+
+@defer(hydrate on hover) {
+  <app-hydration></app-hydration>
+}@placeholder {
+  <div>user data loading...</div>
+}
+
+@defer(hydrate on timer(5000ms)) {
+  <app-hydration></app-hydration>
+}@placeholder {
+  <div>user data loading...</div>
+}
+
+@defer(hydrate on viewport) {
+  <app-hydration></app-hydration>
+}@placeholder {
+  <div>user data loading...</div>
+}
+
+@defer(hydrate on idle) {
+  <app-hydration></app-hydration>
+}@placeholder {
+  <div>user data loading...</div>
+}
+
+@defer(hydrate on immediate) {
+  <app-hydration></app-hydration>
+}@placeholder {
+  <div>user data loading...</div>
+} -->
+
+<!-- hydrate when -->
+
+<!-- <button (click)="login()">Login</button>
+
+@defer(when isLogin) {
+  <app-hydration></app-hydration>
+}@placeholder {
+   user data loading...
+} -->
+
+
+ <!-- hydrate never -->
+
+<!-- 
+ @defer( hydrate never) {
+  <app-hydration></app-hydration>
+}@placeholder {
+   user data loading...
+}
+
+@defer (hydrate on interaction) {
+    <app-linked-signal/>
+  @defer (hydrate on hover) {
+    <app-hydration/>
+  }@placeholder {
+    App-child is loading...
+  }
+}@placeholder {
+  app-parent is loading...
+} -->
