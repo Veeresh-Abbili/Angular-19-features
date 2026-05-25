@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit,resource } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
-import { promises } from 'dns';
-
+import { Resource } from '@angular/core';
 @Component({
   selector: 'app-resource-rx-resource',
   imports: [],
