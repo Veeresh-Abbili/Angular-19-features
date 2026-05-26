@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   standalone:true,
   imports: [RouterOutlet, StandaloneComponent, CommonModule],
+  imports: [ResourceRxResourceComponent],
+  imports: [HydrationComponent, LinkedSignalComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
