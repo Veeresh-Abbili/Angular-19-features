@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit,resource } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { Resource } from '@angular/core';
+import { promises } from 'dns';
+
 @Component({
   selector: 'app-resource-rx-resource',
   imports: [],
@@ -13,6 +15,8 @@ export class ResourceRxResourceComponent implements OnInit {
   constructor(private http:HttpClient){}
 
   userData:any[]=[];
+  // userData:any[]=[];
+  // rxResourceData:any[]=[];
 
   Url="https://jsonplaceholder.typicode.com/users"
 
@@ -26,6 +30,15 @@ ngOnInit(): void {
          this.userData = res;
     })
   }
+//  this.getData();
+}
+
+
+  // getData(){
+  //    return this.http.get<any>(this.Url).subscribe((res:any)=>{
+  //        this.userData = res;
+  //   })
+  // }
 
     // rxResource API:
 

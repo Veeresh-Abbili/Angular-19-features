@@ -7,6 +7,7 @@ import { ResourceRxResourceComponent } from './resource-rx-resource/resource-rx-
   selector: 'app-root',
   standalone:true,
   imports: [ResourceRxResourceComponent],
+  imports: [HydrationComponent, LinkedSignalComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
