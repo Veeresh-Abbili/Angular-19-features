@@ -1,5 +1,8 @@
-<!-- <p>app.component works!</p> -->
-<app-resource-rx-resource/>
+<p>app.component works!</p>
+<button (click)="login()">Standalone</button>
+<app-standalone *ngIf="isLogin"></app-standalone>
+<router-outlet></router-outlet>
+<!-- <app-resource-rx-resource/> -->
 <!-- <app-linked-signal></app-linked-signal> -->
 
 <!-- hydration on : interaction, hover,timer,viewport,idle and immediate -->
