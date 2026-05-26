@@ -1,9 +1,11 @@
 <!-- <p>app.component works!</p> -->
+<app-resource-rx-resource/>
 <!-- <app-resource-rx-resource/> -->
 <!-- <app-linked-signal></app-linked-signal> -->
 
 <!-- hydration on : interaction, hover,timer,viewport,idle and immediate -->
 
+<!-- @defer(hydrate on interaction) {
 @defer(hydrate on interaction) {
   <app-hydration></app-hydration>
 }@placeholder {
@@ -38,6 +40,11 @@
   <app-hydration></app-hydration>
 }@placeholder {
   <div>user data loading...</div>
+} -->
+
+<!-- hydrate when -->
+
+<!-- <button (click)="login()">Login</button>
 }
 
 <!-- hydrate when -->
@@ -48,11 +55,13 @@
   <app-hydration></app-hydration>
 }@placeholder {
    user data loading...
+} -->
 }
 
 
  <!-- hydrate never -->
 
+<!-- 
 
  @defer( hydrate never) {
   <app-hydration></app-hydration>
@@ -69,4 +78,5 @@
   }
 }@placeholder {
   app-parent is loading...
+} -->
 }
