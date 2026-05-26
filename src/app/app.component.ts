@@ -1,14 +1,24 @@
-import { Component, computed, linkedSignal, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { HydrationComponent } from './hydration/hydration.component';
 import { LinkedSignalComponent } from "./linked-signal/linked-signal.component";
 
 @Component({
   selector: 'app-root',
-  imports: [LinkedSignalComponent],
+  standalone:true,
+  imports: [HydrationComponent, LinkedSignalComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'angular19-features';
+
+     isLogin:boolean = false;
+
+     login(){
+
+     this.isLogin = true;
+    }
+
 
 
 
